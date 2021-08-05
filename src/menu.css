@@ -1,0 +1,35 @@
+.main-bar-navigation button {
+    background-color: white;
+    height: 44px;
+    line-height: 44px;
+    padding: 0 40px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.main-bar-navigation {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.main-bar h1 {
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.main-bar {
+    display: flex;
+    flex-direction: column;
+    background-color: green;
+    align-items: center;
+    padding: 26px;
+}
+
+.main-bar * {
+    background-color: blue;
+}
+
