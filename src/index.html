@@ -6,13 +6,14 @@
         <link rel="stylesheet" type="text/css" href="normalize.css"/>
         <link rel="stylesheet" type="text/css" href="index.css"/>
         <link rel="stylesheet" type="text/css" href="menu.css"/>
+        <script defer src="index.js"></script>
     </head>
     <body>
         <div class="main-bar">
             <h1>Mai Roomie</h1>
             <nav class="main-bar-navigation">
-                <button>Chores</button>
-                <button>Finances</button>
+                <button onclick="loadChoresSection()">Chores</button>
+                <button onclick="loadFinancesSection()">Finances</button>
             </nav>
         </div>
         <section id="app" class="app-container">
