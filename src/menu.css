@@ -17,6 +17,19 @@
    
 }
 
+.chores {
+
+    display: flex;
+    flex-direction: column-reverse;
+    width: 300px;
+    flex-flow: column nowrap; 
+    width: 100%;
+    align-items: center;
+    margin-top: 20px;
+
+}
+
+
 .main-bar-navigation button {
     background-image: linear-gradient(to bottom right, #3F7267, #7D9D8B);
     height: 44px;
