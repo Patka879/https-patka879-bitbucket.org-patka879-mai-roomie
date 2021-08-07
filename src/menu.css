@@ -1,35 +1,75 @@
+.in-chores-button {
+    width: 250px; 
+    height: 35px;
+    border: 1px solid #0C1618;
+    border-radius: 10px;
+    margin: 10px 0 5px 0;
+    background-image: linear-gradient(to bottom right,#FAA916, #FAC96E);
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    transition-duration: 0.1s;
+    box-shadow: 0 4px rgb(199, 199, 199);
+}
+
+.in-chores-button:hover {
+    font-weight: 600;
+    box-shadow: 0 4px rgb(138, 138, 138);
+   
+}
+
 .main-bar-navigation button {
-    background-color: white;
+    background-image: linear-gradient(to bottom right, #3F7267, #7D9D8B);
     height: 44px;
     line-height: 44px;
     padding: 0 40px;
-    border: 1px solid black;
     border-radius: 10px;
+    border: 1px solid #0C1618;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 550;
+    color: #FAF4D3;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    box-shadow: 0 4px rgb(199, 199, 199);
+}
+
+.main-bar-navigation button:hover {
+    font-weight: 650;
+    box-shadow: 0 4px rgb(138, 138, 138);
 }
 
 .main-bar-navigation {
+   
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    
 }
 
 .main-bar h1 {
-    border: 1px solid black;
+    
     border-radius: 10px;
     width: 100%;
-    padding: 15px 0;
+    padding: 10px 0 5px 0;
     text-align: center;
+    background-image: linear-gradient(to bottom right,#004643, #3F7267);
+    border: 1px solid #0C1618   ;
+    font-family: 'Style Script', cursive;
+    color: #FAF4D3;
+    cursor: pointer;
+    transition-duration: 0.4s;
+  
+
+
 }
 
 .main-bar {
     display: flex;
     flex-direction: column;
-    background-color: green;
+    background-image: linear-gradient(#FAA916, #FAF4D3);
     align-items: center;
     padding: 26px;
+    
 }
 
-.main-bar * {
-    background-color: lime;
-}
+
 
