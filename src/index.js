@@ -11,41 +11,22 @@ function loadChoresSection() {
         appSection.removeChild(oldChoresSpan)
     }
 
+    function createChoresSpanButton(name) {
+        let button = document.createElement('button')
+        button.innerText = name
+        button.classList.add("in-chores-button")
+        return button
+    }
+
     let choresSpan = document.createElement('span')
-    let buttonCleaning = document.createElement('button')
-    buttonCleaning.innerText = "Cleaning"
-    buttonCleaning.classList.add("in-chores-button")
-    let buttonTrash = document.createElement('button')
-    buttonTrash.innerText = "Taking out the trash"
-    buttonTrash.classList.add("in-chores-button")
-    let buttonCooking = document.createElement('button')
-    buttonCooking.innerText = "Cooking"
-    buttonCooking.classList.add("in-chores-button")
-    let buttonFeeding = document.createElement('button')
-    buttonFeeding.innerText = "Feeding the Cat"
-    buttonFeeding.classList.add("in-chores-button")
-    let buttonAddChore = document.createElement('button')
-    buttonAddChore.innerText = "AddChore"
-    buttonAddChore.classList.add("in-chores-button")
+    choresSpan.classList.add("chores")
     
     appSection.appendChild(choresSpan)
-    choresSpan.appendChild(buttonCleaning) 
-    choresSpan.appendChild(buttonTrash)
-    choresSpan.appendChild(buttonCooking)
-    choresSpan.appendChild(buttonFeeding)
-    choresSpan.appendChild(buttonAddChore)
-    
-    choresSpan.style.display = "flex"
-    choresSpan.style.flexDirection = "column-reverse"
-    choresSpan.style.width = "300px"
-    choresSpan.style.flexFlow = "column nowrap"
-    choresSpan.style.width = "100%"
-    choresSpan.style.alignItems = "center"
-    choresSpan.style.marginTop = "20px"
-   
-   
-
-
+    choresSpan.appendChild(createChoresSpanButton('Cleaning')) 
+    choresSpan.appendChild(createChoresSpanButton('Taking out the trash'))
+    choresSpan.appendChild(createChoresSpanButton('Cooking'))
+    choresSpan.appendChild(createChoresSpanButton('Feeding the Cat'))
+    choresSpan.appendChild(createChoresSpanButton('Add chore'))
 }
 
 function loadFinancesSection() {
