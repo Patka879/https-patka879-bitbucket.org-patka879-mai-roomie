@@ -4,6 +4,7 @@
     padding: 4px;
     opacity: 0.8;
     
+    
 }
 
 .properties-button {
@@ -28,18 +29,19 @@
 .in-chores-button {
     width: 250px; 
     height: 35px;
-    border: 1px solid #0C1618;
-    border-radius: 10px;
+    border: 1px solid #FAA916;
+    border-radius: 5px;
+    color: #FAA916;
     margin: 10px 0 5px 0;
-    background-image: linear-gradient(to bottom right,#FAA916, #FAC96E);
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Lato', sans-serif;
     cursor: pointer;
-    box-shadow: 0 4px rgb(199, 199, 199);
+    box-shadow: 0 4px rgb(238, 237, 237);
+    background-color: white;
 }
 
 .in-chores-button:hover {
     font-weight: 600;
-    box-shadow: 0 4px rgb(138, 138, 138);
+    box-shadow: 0 4px rgb(168, 167, 167);
    
 }
 
@@ -65,27 +67,29 @@
 
 .app-container {
     height: 375px;
+    border: 1px solid #592E83;
+    border-radius: 5px;
+    margin: 6px 6px 3px 6px;
 }
 
 
 .main-bar-navigation button {
-    background-image: linear-gradient(to bottom right, #3F7267, #7D9D8B);
     height: 44px;
     line-height: 44px;
     padding: 0 40px;
-    border-radius: 10px;
-    border: 1px solid #0C1618;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 550;
-    color: #FAF4D3;
+    border-radius: 5px;
+    border: 1px solid #592E83;
+    font-family: 'Lato', sans-serif;
+    color: #592E83;
     cursor: pointer;
     transition-duration: 0.2s;
-    box-shadow: 0 4px rgb(199, 199, 199);
+    background-color: white;
+    box-shadow: 0 4px rgb(238, 237, 237);
 }
 
 .main-bar-navigation button:hover {
     font-weight: 650;
-    box-shadow: 0 4px rgb(138, 138, 138);
+  
 }
 
 .main-bar-navigation {
@@ -96,29 +100,29 @@
     
 }
 
-.main-bar h1 {
+.main-logo {
+    height: 74px;
+    width: 248px;
     
-    border-radius: 10px;
+}
+
+.main-bar h1 {
     width: 100%;
-    padding: 10px 0 5px 0;
-    text-align: center;
-    background-image: linear-gradient(to bottom right,#004643, #3F7267);
-    border: 1px solid #0C1618   ;
-    font-family: 'Style Script', cursive;
-    color: #FAF4D3;
     cursor: pointer;
     transition-duration: 0.4s;
-  
-
-
+    text-align: center;
+   
 }
 
 .main-bar {
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(#FAA916, #FAF4D3);
+    background-color: white;
     align-items: center;
-    padding: 26px;
+    padding: 5px 7px 22px 7px;
+    margin: 6px 6px 3px 6px;
+    border: 1px solid #FAA916;
+    border-radius: 5px;
     
 }
 
