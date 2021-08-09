@@ -1,3 +1,30 @@
+.prop {
+    height: 40px;
+    width: 40px; 
+    padding: 4px;
+    opacity: 0.8;
+    
+}
+
+.properties-button {
+    
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    padding: 0px;
+    
+    
+}
+
+.properties-container {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 50px;
+    height: 48px;
+    padding: 5px 26px 5px 26px;
+
+}
+
 .in-chores-button {
     width: 250px; 
     height: 35px;
@@ -7,7 +34,6 @@
     background-image: linear-gradient(to bottom right,#FAA916, #FAC96E);
     font-family: 'Montserrat', sans-serif;
     cursor: pointer;
-    transition-duration: 0.1s;
     box-shadow: 0 4px rgb(199, 199, 199);
 }
 
@@ -21,12 +47,24 @@
 
     display: flex;
     flex-direction: column-reverse;
-    width: 300px;
     flex-flow: column nowrap; 
     width: 100%;
     align-items: center;
     margin-top: 20px;
 
+}
+
+.finances {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-flow: column nowrap; 
+    width: 100%;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.app-container {
+    height: 375px;
 }
 
 

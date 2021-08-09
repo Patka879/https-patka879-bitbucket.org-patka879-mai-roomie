@@ -35,11 +35,15 @@ function loadChoresSection() {
 function loadFinancesSection() {
     let appSection = document.querySelector("#app")
     let oldFinancesSpan = document.querySelector("#app span")
+
     if (oldFinancesSpan) {
         appSection.removeChild(oldFinancesSpan)
     }
+
     let financesSpan = document.createElement('span')
+    financesSpan.classList.add('chores')
     financesSpan.innerText = 'Finances'
+
     appSection.appendChild(financesSpan)
 }
 
