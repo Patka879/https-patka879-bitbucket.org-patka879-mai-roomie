@@ -39,24 +39,16 @@
     background-color: white;
 }
 
+.in-chores-button:active, 
 .in-chores-button:hover {
     font-weight: 600;
     box-shadow: 0 4px rgb(168, 167, 167);
    
 }
 
-.chores {
 
-    display: flex;
-    flex-direction: column-reverse;
-    flex-flow: column nowrap; 
-    width: 100%;
-    align-items: center;
-    margin-top: 20px;
 
-}
-
-.finances {
+.app-container span {
     display: flex;
     flex-direction: column-reverse;
     flex-flow: column nowrap; 
@@ -87,6 +79,7 @@
     box-shadow: 0 4px rgb(238, 237, 237);
 }
 
+.main-bar-navigation button:active,
 .main-bar-navigation button:hover {
     font-weight: 650;
   

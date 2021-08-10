@@ -2,14 +2,7 @@
 
 let currentTab = "chores";
 
-function loadChoresSection() {
-    let appSection = document.querySelector("#app")
-    let oldChoresSpan = document.querySelector("#app span")
-
-
-    if (oldChoresSpan) {
-        appSection.removeChild(oldChoresSpan)
-    }
+function loadChoresSection(container) {
 
     function createChoresSpanButton(name) {
         let button = document.createElement('button')
@@ -19,11 +12,7 @@ function loadChoresSection() {
     
     }
 
-    let choresSpan = document.createElement('span')
-    choresSpan.classList.add('chores')
-
-    
-    appSection.appendChild(choresSpan)
+    container.appendChild(choresSpan)
     choresSpan.appendChild(createChoresSpanButton('Cleaning')) 
     choresSpan.appendChild(createChoresSpanButton('Taking out the trash'))
     choresSpan.appendChild(createChoresSpanButton('Cooking'))
@@ -32,19 +21,27 @@ function loadChoresSection() {
     
 }
 
-function loadFinancesSection() {
-    let appSection = document.querySelector("#app")
-    let oldFinancesSpan = document.querySelector("#app span")
-
-    if (oldFinancesSpan) {
-        appSection.removeChild(oldFinancesSpan)
-    }
-
-    let financesSpan = document.createElement('span')
-    financesSpan.classList.add('chores')
+function loadFinancesSection(container) {
     financesSpan.innerText = 'Finances'
 
-    appSection.appendChild(financesSpan)
+    container.appendChild(financesSpan)
 }
 
 loadChoresSection()
+
+
+function loadSection(name) {
+    let appContainer = document.querySelector(".app-container")
+    let oldAppContainerSpan = document.querySelector(".app-container span")
+
+    if (oldAppContainerSpan) {
+        appContainer.removeChild(oldAppContainerSpan)
+    }
+
+    let appContainerSpan = document.createElement('span')
+
+    switch(name) {
+        case "chores":
+            loadChoresSection(appContainerSpan)
+    }
+}
