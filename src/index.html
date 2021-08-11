@@ -1,35 +1,36 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <title><Mai Roomie></title>
-        <link rel="stylesheet" type="text/css" href="normalize.css"/>
-        <link rel="stylesheet" type="text/css" href="index.css"/>
-        <link rel="stylesheet" type="text/css" href="menu.css"/>
-        <script defer src="index.js"></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lato&family=Quicksand:wght@300&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <div class="main-bar">
-            <h1>
-                <img class="main-logo" src="prop/logo2.png" alt="logo">
-            </h1>
-            <nav class="main-bar-navigation">
-                <button onclick="loadChoresSection()">Chores</button>
-                <button onclick="loadFinancesSection()">Finances</button>
-            </nav>
-        </div>
-        <section class="app-container"></section>
-        <div class="properties-container">
-            <button class="properties-button">
-                <img class="prop" alt="properties" src="prop/propicon.png">
-            </button>
-        </div>
-    </body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title><Mai Roomie></title>
+    <link rel="stylesheet" type="text/css" href="normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="index.css"/>
+    <link rel="stylesheet" type="text/css" href="menu.css"/>
+    <script defer src="index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Quicksand:wght@300&display=swap" rel="stylesheet"/>
+  </head>
+  <body>
+    <div class="main-bar">
+      <h1>
+        <img class="main-logo" src="prop/logo2.png" alt="logo">
+      </h1>
+      <nav class="main-bar-navigation">
+        <button onclick='loadSection("chores")'>Chores</button>
+        <button onclick='loadSection("finances")'>Finances</button>
+      </nav>
+    </div>
+    <section class="app-container"></section>
+    <div class="properties-container">
+      <button class="properties-button">
+        <img class="prop" alt="properties" src="prop/propicon.png">
+      </button>
+    </div>
+  </body>
 </html>
 

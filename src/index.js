@@ -1,47 +1,45 @@
 'use strict'
 
-let currentTab = "chores";
+let currentTab = 'chores'
 
 function loadChoresSection(container) {
+  console.log('case chores')
+  function createChoresSpanButton(name) {
+    let button = document.createElement('button')
+    button.innerText = name
+    button.classList.add('in-chores-button')
+    return button
+  }
 
-    function createChoresSpanButton(name) {
-        let button = document.createElement('button')
-        button.innerText = name
-        button.classList.add("in-chores-button")
-        return button
-    
-    }
-
-    container.appendChild(choresSpan)
-    choresSpan.appendChild(createChoresSpanButton('Cleaning')) 
-    choresSpan.appendChild(createChoresSpanButton('Taking out the trash'))
-    choresSpan.appendChild(createChoresSpanButton('Cooking'))
-    choresSpan.appendChild(createChoresSpanButton('Feeding the Cat'))
-    choresSpan.appendChild(createChoresSpanButton('Add chore'))
-    
+  container.appendChild(createChoresSpanButton('Cleaning')) 
+  container.appendChild(createChoresSpanButton('Taking out the trash'))
+  container.appendChild(createChoresSpanButton('Cooking'))
+  container.appendChild(createChoresSpanButton('Feeding the Cat'))
+  container.appendChild(createChoresSpanButton('Add chore'))   
 }
 
 function loadFinancesSection(container) {
-    financesSpan.innerText = 'Finances'
-
-    container.appendChild(financesSpan)
+  console.log('case finances')
+  container.innerText = 'Finances'
 }
 
-loadChoresSection()
-
-
 function loadSection(name) {
-    let appContainer = document.querySelector(".app-container")
-    let oldAppContainerSpan = document.querySelector(".app-container span")
+  let appContainer = document.querySelector('.app-container')
+  appContainer.innerHTML = ''
 
-    if (oldAppContainerSpan) {
-        appContainer.removeChild(oldAppContainerSpan)
-    }
+  switch(name) {
+    case 'chores':
+      loadChoresSection(appContainer)
+      return
+    case 'finances':
+      loadFinancesSection(appContainer)
+      return
+    default:
+      loadChoresSection(appContainer)
+      return
+  }
+}
 
-    let appContainerSpan = document.createElement('span')
-
-    switch(name) {
-        case "chores":
-            loadChoresSection(appContainerSpan)
-    }
+window.onload = () => {
+  loadSection('chores')
 }
