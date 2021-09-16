@@ -1,5 +1,23 @@
 'use strict'
 
+import './normalize.css'
+import './index.css'
+import './menu.css'
+
+const buttons = document.querySelectorAll('.main-bar-navigation button')
+console.log(buttons)
+buttons.forEach(function(buttonItem) {
+  console.log(buttonItem.innerText)
+  buttonItem.addEventListener(
+    'click',
+    function() {
+      console.log('yello')
+      loadSection(buttonItem.innerText.toLowerCase())
+    },
+    false
+  )
+})
+
 let currentTab = 'chores'
 
 console.log('case chores')
