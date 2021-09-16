@@ -21,34 +21,37 @@
 }
 
 .in-chores-button {
-  width: 250px; 
-  height: 35px;
-  border: 1px solid #FAA916;
-  border-radius: 5px;
-  color: #FAA916;
-  margin: 10px 0 5px 0;
-  font-family: 'Lato', sans-serif;
-  cursor: pointer;
-  box-shadow: 0 4px rgb(238, 237, 237);
-  background-color: white;
-  text-transform: capitalize;
+    width: 250px; 
+    height: 35px;
+    border: 1px solid #FAA916;
+    border-radius: 5px;
+    color: #FAA916;
+    margin: 10px 0 5px 0;
+    font-family: 'Lato', sans-serif;
+    cursor: pointer;
+    box-shadow: 0 4px rgb(238, 237, 237);
+    background-color: white;
+    text-transform: capitalize;
 }
 
 .in-chores-button:active, 
 .in-chores-button:hover {
-  font-weight: 600;
-  box-shadow: 0 4px rgb(168, 167, 167);
+    font-weight: 600;
+    box-shadow: 0 4px rgb(168, 167, 167);
 }
 
 .app-container {
-  display: flex;
-  flex-direction: column-reverse;
-  flex-flow: column nowrap;
-  align-items: center;
-  height: 375px;
-  border: 1px solid #592E83;
-  border-radius: 5px;
-  margin-top: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-flow: column nowrap; 
+    width: 100%;
+    align-items: center;
+    height: 350px;
+    border: 1px solid #592E83;
+    border-radius: 5px;
+    margin: 20px 3px 0 1px;
+    padding-top: 10px;
+
 }
 
 .main-bar-navigation button {
@@ -71,9 +74,10 @@
 }
 
 .main-bar-navigation {
-  display: flex;
-  width: 100%;
-  justify-content: space-evenly; 
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    
 }
 
 .main-logo {
@@ -89,13 +93,14 @@
 }
 
 .main-bar {
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-  align-items: center;
-  padding: 5px 7px 22px 7px;
-  border: 1px solid #FAA916;
-  border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+    padding: 5px 7px 22px 7px;
+    border: 1px solid #FAA916;
+    border-radius: 5px;
+    
 }
 
 

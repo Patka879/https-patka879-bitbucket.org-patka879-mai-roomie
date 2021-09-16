@@ -2,6 +2,7 @@
 
 let currentTab = 'chores'
 
+console.log('case chores')
 function loadChoresSection(container) {
   console.log('case chores')
   function createChoresSpanButton(name) {
