@@ -1,7 +1,8 @@
 'use strict'
 
-let currentTab = "chores";
+let currentTab = 'chores';
 
+console.log('case chores')
 function loadChoresSection(container) {
 
     function createChoresSpanButton(name) {
@@ -11,37 +12,39 @@ function loadChoresSection(container) {
         return button
     
     }
-
-    container.appendChild(choresSpan)
-    choresSpan.appendChild(createChoresSpanButton('Cleaning')) 
-    choresSpan.appendChild(createChoresSpanButton('Taking out the trash'))
-    choresSpan.appendChild(createChoresSpanButton('Cooking'))
-    choresSpan.appendChild(createChoresSpanButton('Feeding the Cat'))
-    choresSpan.appendChild(createChoresSpanButton('Add chore'))
+    
+    container.appendChild(createChoresSpanButton('Cleaning')) 
+    container.appendChild(createChoresSpanButton('Taking out the trash'))
+    container.appendChild(createChoresSpanButton('Cooking'))
+    container.appendChild(createChoresSpanButton('Feeding the Cat'))
+    container.appendChild(createChoresSpanButton('Add chore'))
     
 }
 
 function loadFinancesSection(container) {
-    financesSpan.innerText = 'Finances'
 
-    container.appendChild(financesSpan)
+    console.log('case finances')
+    container.innerText = 'Finances'
 }
-
-loadChoresSection()
-
 
 function loadSection(name) {
     let appContainer = document.querySelector(".app-container")
-    let oldAppContainerSpan = document.querySelector(".app-container span")
+    appContainer.innerHTML = ''
 
-    if (oldAppContainerSpan) {
-        appContainer.removeChild(oldAppContainerSpan)
-    }
-
-    let appContainerSpan = document.createElement('span')
 
     switch(name) {
-        case "chores":
-            loadChoresSection(appContainerSpan)
+        case 'chores':
+            loadChoresSection(appContainer)
+            return
+        case 'finances':
+            loadFinancesSection(appContainer)
+            return
+        default:
+            loadChoresSection(appContainer)
+            return
     }
+}
+
+window.onload = () => {
+    loadSection('chores')
 }
