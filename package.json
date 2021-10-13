@@ -1,0 +1,31 @@
+{
+  "name": "mai-roomie",
+  "version": "0.0.1",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "webpack serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://mmsmsy@bitbucket.org/patka879/mai-roomie.git"
+  },
+  "keywords": [
+    "mai"
+  ],
+  "author": "Patrycja Mysiak / Mateusz Mysiak",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://bitbucket.org/patka879/mai-roomie/issues"
+  },
+  "homepage": "https://bitbucket.org/patka879/mai-roomie#readme",
+  "dependencies": {
+    "css-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.3.2",
+    "style-loader": "^3.2.1",
+    "webpack": "^5.52.1",
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^4.2.1"
+  }
+}
